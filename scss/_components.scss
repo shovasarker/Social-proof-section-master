@@ -1,0 +1,163 @@
+
+.container {
+    padding: 80px 24px 100px 24px;
+    background-image: url("../images/bg-pattern-top-mobile.svg"),url("../images/bg-pattern-bottom-mobile.svg");
+    background-position: top left, bottom right;
+    background-repeat: no-repeat, no-repeat;
+    @include breakpoint-up(medium) {
+        padding: 130px 165px 100px 165px;
+    }
+    @include breakpoint-up(large) {
+        padding: 130px 0 100px 0;
+        margin: 0 auto;
+        width: 700px;
+    }
+    @include breakpoint-up(xlarge) {
+        width: 100%;
+        padding: 130px 165px 100px 165px;
+        background-image: url("../images/bg-pattern-top-desktop.svg"),url("../images/bg-pattern-bottom-desktop.svg");
+        background-position: top left, bottom right;
+        background-repeat: no-repeat, no-repeat;
+    }
+    &__top {
+        @include breakpoint-up(xlarge) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &__header {
+        text-align: center;
+        @include breakpoint-up(xlarge) {
+            text-align: left;
+            flex: 2;
+        }
+        h1 {
+            font-size: 1.8375rem;
+            line-height: 1.8375rem;
+            margin-bottom: 1.5rem;
+                
+            @include breakpoint-up(xlarge) {
+                font-size: 44px;
+                line-height: 45px;
+            }
+        }
+
+        p {
+           font-size: 0.9rem;
+           line-height: 1.3rem;
+           color: $DarkGrayishMagenta;
+           margin-bottom: 40px;
+        }
+    }
+
+    &__rating {
+        text-align: center;
+        width: 100%;
+        
+        @include breakpoint-up(xlarge) {
+            flex: 3;
+        }
+        &__item {
+            background-color: $LightGrayishMagenta;
+            padding: 18px 0;
+            border-radius: 10px;
+            margin-bottom: 50px;
+            
+            @include breakpoint-up(xlarge) {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                padding-left: 24px;
+                width: 440px;
+            }
+            &:not(:last-child){
+                margin-bottom: 18px;
+            }
+            img {
+                margin-right: 8px;
+            }
+            &__title {
+                margin-top: 10px;
+                font-weight: 700;
+                @include breakpoint-up(xlarge) {
+                    margin-left: 16px;
+                }
+            }
+            &.item1 {
+                @include breakpoint-up(xlarge){
+                    margin-left: 140px;
+                }
+            }
+            &.item2 {                
+                @include breakpoint-up(xlarge){
+                    margin-left: 190px;
+                }
+            }
+            &.item3 {               
+                @include breakpoint-up(xlarge){
+                    margin-left: 240px;
+                }
+            }
+        }
+    }
+
+    &__testimonials {
+
+        @include breakpoint-up(xlarge){
+            display: flex;
+        }
+
+        &__item {
+            background-color: $VeryDarkMagenta;
+            border-radius: 10px;
+            padding: 33px;
+            
+            @include breakpoint-up(xlarge) {
+                height: 250px;
+            }
+            &:not(:last-child){
+                margin-bottom: 16px;        
+                @include breakpoint-up(xlarge){
+                    margin-right: 30px;
+                }
+            }
+            &__header {
+                display: flex;
+                align-items: center;
+                img {
+                    width: 45px;
+                    border-radius: 50%;
+                    margin-right: 20px;
+                }
+                &__name {
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                    color: $White;
+                }
+
+                &__title {
+                    font-size: 0.9375rem;
+                    color: $SoftPink;
+                }
+            }
+            p {
+                margin-top: 30px;
+                font-size: 0.9rem;
+                line-height: 1.4rem;
+                color: $LightGrayishMagenta;
+            }
+            &.item2 {
+                @include breakpoint-up(xlarge){
+                    margin-top: 1rem;
+                }
+            }
+
+            &.item3 {
+                @include breakpoint-up(xlarge){
+                    margin-top: 2rem;
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,236 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 0.9375rem;
+  font-family: "Spartan",sans-serif;
+  color: #502050;
+}
+
+.container {
+  padding: 80px 24px 100px 24px;
+  background-image: url("../images/bg-pattern-top-mobile.svg"), url("../images/bg-pattern-bottom-mobile.svg");
+  background-position: top left, bottom right;
+  background-repeat: no-repeat, no-repeat;
+}
+
+@media (min-width: 40rem) {
+  .container {
+    padding: 130px 165px 100px 165px;
+  }
+}
+
+@media (min-width: 64rem) {
+  .container {
+    padding: 130px 0 100px 0;
+    margin: 0 auto;
+    width: 700px;
+  }
+}
+
+@media (min-width: 87.5rem) {
+  .container {
+    width: 100%;
+    padding: 130px 165px 100px 165px;
+    background-image: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg");
+    background-position: top left, bottom right;
+    background-repeat: no-repeat, no-repeat;
+  }
+}
+
+@media (min-width: 87.5rem) {
+  .container__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.container__header {
+  text-align: center;
+}
+
+@media (min-width: 87.5rem) {
+  .container__header {
+    text-align: left;
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
+}
+
+.container__header h1 {
+  font-size: 1.8375rem;
+  line-height: 1.8375rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 87.5rem) {
+  .container__header h1 {
+    font-size: 44px;
+    line-height: 45px;
+  }
+}
+
+.container__header p {
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+  color: #937b92;
+  margin-bottom: 40px;
+}
+
+.container__rating {
+  text-align: center;
+  width: 100%;
+}
+
+@media (min-width: 87.5rem) {
+  .container__rating {
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+  }
+}
+
+.container__rating__item {
+  background-color: #f7f2f7;
+  padding: 18px 0;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 87.5rem) {
+  .container__rating__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 24px;
+    width: 440px;
+  }
+}
+
+.container__rating__item:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+.container__rating__item img {
+  margin-right: 8px;
+}
+
+.container__rating__item__title {
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+@media (min-width: 87.5rem) {
+  .container__rating__item__title {
+    margin-left: 16px;
+  }
+}
+
+@media (min-width: 87.5rem) {
+  .container__rating__item.item1 {
+    margin-left: 140px;
+  }
+}
+
+@media (min-width: 87.5rem) {
+  .container__rating__item.item2 {
+    margin-left: 190px;
+  }
+}
+
+@media (min-width: 87.5rem) {
+  .container__rating__item.item3 {
+    margin-left: 240px;
+  }
+}
+
+@media (min-width: 87.5rem) {
+  .container__testimonials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.container__testimonials__item {
+  background-color: #502050;
+  border-radius: 10px;
+  padding: 33px;
+}
+
+@media (min-width: 87.5rem) {
+  .container__testimonials__item {
+    height: 250px;
+  }
+}
+
+.container__testimonials__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+@media (min-width: 87.5rem) {
+  .container__testimonials__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.container__testimonials__item__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container__testimonials__item__header img {
+  width: 45px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.container__testimonials__item__header__name {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: white;
+}
+
+.container__testimonials__item__header__title {
+  font-size: 0.9375rem;
+  color: #ee68a4;
+}
+
+.container__testimonials__item p {
+  margin-top: 30px;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+  color: #f7f2f7;
+}
+
+@media (min-width: 87.5rem) {
+  .container__testimonials__item.item2 {
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 87.5rem) {
+  .container__testimonials__item.item3 {
+    margin-top: 2rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
