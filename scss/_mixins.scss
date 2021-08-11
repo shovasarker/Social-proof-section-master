@@ -20,3 +20,9 @@ $breakpoint-down: ("small": "39.9375rem","medium": "63.9375rem", "large": "87.43
     }
     
 }
+
+@mixin breakpoint-fixed-up ($size) {
+    @media (min-width: $size){
+        @content;
+    }
+}
